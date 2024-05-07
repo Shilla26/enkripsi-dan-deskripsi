@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encryption and Decryption</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Encryption and Decryption Application</h2>
+    <label for="algorithm">Choose algorithm:</label>
+    <select id="algorithm">
+      <option value="rc4">RC4</option>
+      <option value="aes">AES</option>
+    </select>
+    <label for="plaintext">Plaintext:</label>
+    <textarea id="plaintext" placeholder="Enter plaintext"></textarea>
+    <label for="ciphertext">Ciphertext:</label>
+    <textarea id="ciphertext" placeholder="Enter ciphertext"></textarea>
+    <label for="key">Key:</label>
+    <input type="text" id="key" placeholder="Enter key">
+    <div class="buttons">
+      <button onclick="encrypt()">Encrypt</button>
+      <button onclick="decrypt()">Decrypt</button>
+      <button onclick="clearFields()">Clear</button>
+    </div>
+  </div>
+  <script src="rc4.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

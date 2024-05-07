@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: "Inknut Antiqua", sans-serif;
+  background-image: url('photo2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #8febee;
+  box-shadow: 0 0 10px rgba(33, 106, 120, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+textarea,
+input[type="text"],
+select {
+  margin-top: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  flex: 1;
+  margin: 0 5px;
+  background-color: #66add1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:active {
+  background-color: #66add1;
+}
+
+
+.buttons button:hover {
+  background-color: #a2aaae;
+}
